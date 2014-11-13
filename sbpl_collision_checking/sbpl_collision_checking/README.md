@@ -1,7 +1,5 @@
 #SBPL Collision Checker
 
-It's time for the SBPL Collision Checker to be reborn as its own repo! A lot of development has been done on it recently and it's approaching a less hacky and more legitimate version of its former self!
-
 This version was created for my RSS 2014 project on [Planning Single-arm Manipulations with n-Arm Robots](http://www.cs.cmu.edu/~./maxim/files/planfornarms_rss14.pdf). In this project, we developed a motion planner that can compute a path for an arm or arms required to move an object from point A to point B. Some examples and a simple description can be seen in [the video](https://www.youtube.com/watch?v=rvYIqM0Ch1k).
 
 ##Why did we have to make a branch for the handoff planner?
@@ -68,4 +66,3 @@ NOTE: The low_res model of the attached_object is hacked together for now! It's 
 
 
 
->>>>>>> 95afb9fd9df553abe4d717b03ab278397d26a642
