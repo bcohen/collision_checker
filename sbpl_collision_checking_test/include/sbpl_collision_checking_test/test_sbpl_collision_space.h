@@ -60,6 +60,7 @@
 class TestSBPLCollisionSpace
 {
   public:
+
     /** \brief Constructor-doesn't initialize class, you need to run init() */
     TestSBPLCollisionSpace();
 

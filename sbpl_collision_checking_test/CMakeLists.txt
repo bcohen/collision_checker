@@ -30,16 +30,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-rosbuild_add_library(sbpl_collision_checking 
-                        src/group.cpp 
-                        src/sbpl_collision_model.cpp
-                        src/sbpl_collision_space.cpp
-                        src/sbpl_collision_space_objects.cpp
-                        src/sbpl_collision_space_visualizations.cpp)
+#rosbuild_add_executable(test_model src/test_collision_model.cpp)
+#target_link_libraries(test_model sbpl_collision_checking)
 
-target_link_libraries(sbpl_collision_checking 
-                        sbpl_geometry_utils
-                        sbpl_manipulation_components
-                        leatherman)
+rosbuild_add_executable(test_space src/test_collision_space.cpp)
+target_link_libraries(test_space sbpl_collision_checking)
 
+rosbuild_add_executable(test_collision_checking src/test_collision_checking.cpp)
+target_link_libraries(test_collision_checking sbpl_collision_checking)
 

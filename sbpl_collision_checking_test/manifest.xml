@@ -1,0 +1,37 @@
+<package>
+  <description brief="Demo Suite for SBPL 3D Collision Checking Library">
+
+    Benjamin Cohen - University of Pennsylvania
+    Advised by:
+    Maxim Likhachev - Carnegie Mellon University
+
+  </description>
+  <author>Benjamin Cohen/bcohen@seas.upenn.edu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes="" />
+  <url>http://www.ros.org/wiki/sbpl_collision_checkin_test</url>
+
+  <depend package="roscpp"/>
+  <depend package="angles" />
+  <depend package="kdl" />
+  <depend package="kdl_parser" />
+  <depend package="distance_field" />
+  <depend package="urdf" />
+  <depend package="tf" />
+  <depend package="tf_conversions" />
+  <depend package="arm_navigation_msgs" />
+  <depend package="sensor_msgs" />
+  <depend package="message_filters" />
+  <depend package="geometry_msgs"/>
+  <depend package="sbpl_manipulation_components" />
+  <depend package="leatherman" />
+  <depend package="visualization_msgs" />
+ 
+  <!-- temporary...added for RSS stuff -->
+  <depend package="pviz" />
+  <depend package="ompl" />
+
+  <rosdep name="eigen" />
+
+</package>
+
